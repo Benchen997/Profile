@@ -5,9 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- adding more description to enhance SEO result -->
     <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <!--sidebar goes here -->
+    <div class="sidebar">
+
+        <!-- profile section -->
+        <div class="sidebar-profile">
+            <div class="siderbar-profile-pic">
+                <img src="./images/profile.jpg" alt="profile">
+            </div>
+            <h2>Robert Elisc</h2>
+        </div>
+
+        <!-- nav bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-social">
+            <a href="#"class="fa fa-facebook"></a>
+            <a href="#"class="fa fa-twitter"></a>
+            <a href="#"class="fa fa-linkedin"></a>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2024 Robert Elisc. All rights reserved</p>
+        </footer>
+    </div>
+
+    <!-- content goes here -->
+    <div class="content">
+        <main>
+            <!-- home page starts here -->
+            <!-- note: 一维布局建议用flex，比如经典左右布局 -->
+            <!-- 二维布局建议使用grid，有横竖元素交叉 -->
+            <section id="home">
+                <div class="home-content">
+                    <!-- left -->
+                    <div class="home-content-description">
+                        <div class="home-content-description-title">
+                            <h3>
+                                Hi, I'm Robert Elisc! Creative Designer Coder Player Based
+                                on Florinda
+                            </h3>
+                        </div>
+                        <div class="home-content-description-para">
+                            <p>
+                                I am a professional web designer and developer. 
+                                I have a passion for web design and love to create for web and mobile devices.
+                            </p>
+                        </div>
+                        <div class="home-content-description-button">
+                            <button>
+                                Got a project?
+                            </button>
+                            <button>
+                                Let's talk
+                            </button>
+                        </div>
+                        <div class="home-content-description-contact"></div>
+                    </div>
+                    <!-- right -->
+                    <div class="home-content-image">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- waiting for development -->
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </main>
+    </div>
 </body>
 </html>
