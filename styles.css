@@ -1,0 +1,165 @@
+:root {
+    --main-color: #55527c;
+    --text-color: #130f49;
+    --yellow-color: #ff972d;
+    --blue-color: #a5a6ff;
+    --background-color: #e8f9f5;
+    --header-background: #fff;
+    --font-inter:"Inter", sans-serif;
+    --font-karla:"Karla", sans-serif;
+    --font-kristi:"Kristi", cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-inter);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    /* flex is 0 0 20%, first 0 */
+    flex: 0 0 20%;
+    background-color: var(--header-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.siderbar-profile-pic {
+    max-width: 1rem;
+    max-height: 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.sidebar-profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.sidebar nav ul li a:hover {
+    color: var(--blue-color);
+}
+
+.sidebar nav ul li a.active {
+    color: var(--blue-color);
+}
+
+/* @problem: need to fix */
+.sidebar-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.fa {
+    padding:5px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: var(--text-color);
+    background-color: rgba(19,15,73, 0.1);
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+.home-content-description {
+    flex: 0 0 50%;
+    margin-right: 3rem;
+}
+
+.home-content-description-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 50px;
+
+}
+
+.home-content-description-contact {
+    margin-top: 2rem;
+    padding: 0 10px;
+    border-left: 4px solid var(--yellow-color);
+}
+
+.home-content-description-contact p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #130f49;
+}
+
+.home-content-image {
+    flex: 0 0 50%;
+}
+
+.home-content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .home-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-content-description {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .home-content-image {
+        margin-top: 2rem;
+    }
+}
